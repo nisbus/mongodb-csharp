@@ -36,11 +36,7 @@ namespace MongoDB.UnitTests.Configuration
 
                 mapping.Map<Person>(m =>
                 {
-<<<<<<< HEAD
                     m.CollectionName("people");
-=======
-                    m.CollectionName("people");
->>>>>>> upstream/master
                     m.Member(x => x.Age).Alias("age");
                     m.Member(x => x.Name).Alias("name").DefaultValue("something").Ignore();
                 });

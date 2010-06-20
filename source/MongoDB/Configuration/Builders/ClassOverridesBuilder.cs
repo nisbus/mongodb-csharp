@@ -32,8 +32,6 @@ namespace MongoDB.Configuration.Builders
         public void CollectionName(string name)
         {
             _overrides.CollectionName = name;
-<<<<<<< HEAD
-=======
         }
 
         /// <summary>
@@ -72,7 +70,6 @@ namespace MongoDB.Configuration.Builders
         {
             var mex = GetMemberExpression(member);
             return Id(mex.Member.Name);
->>>>>>> upstream/master
         }
 
         /// <summary>
@@ -108,17 +105,6 @@ namespace MongoDB.Configuration.Builders
         /// <param name="member">The member.</param>
         /// <returns></returns>
         public MemberOverridesBuilder Member(Expression<Func<T, object>> member)
-<<<<<<< HEAD
-        {
-            var memberExpression = member.Body as MemberExpression;
-            if (memberExpression == null)
-            {
-                var unaryExpression = member.Body as UnaryExpression;
-                memberExpression = unaryExpression.Operand as MemberExpression;
-            }
-
-            return Member(memberExpression.Member.Name);
-=======
         {
             var mex = GetMemberExpression(member);
             return Member(mex.Member.Name);
@@ -139,7 +125,6 @@ namespace MongoDB.Configuration.Builders
             }
 
             return memberExpression;
->>>>>>> upstream/master
         }
     }
 }
