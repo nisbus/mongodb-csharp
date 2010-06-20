@@ -13,7 +13,7 @@ namespace MongoDB
     /// <summary>
     /// 
     /// </summary>
-    public class MongoCollection<T> : IMongoCollection<T> where T : class
+    public partial class MongoCollection<T> : IMongoCollection<T> where T : class
     {
         private readonly MongoConfiguration _configuration;
         private readonly Connection _connection;

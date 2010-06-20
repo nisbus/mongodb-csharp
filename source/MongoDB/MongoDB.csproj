@@ -21,7 +21,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <RootNamespace>MongoDB.Driver</RootNamespace>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <RootNamespace>MongoDB</RootNamespace>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\StrongName.snk</AssemblyOriginatorKeyFile>
@@ -39,6 +39,7 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -128,6 +129,7 @@
     <Compile Include="Configuration\Mapping\Auto\OverridableAutoMappingProfile.cs" />
     <Compile Include="Configuration\Mapping\Conventions\MemberFinderBase.cs" />
     <Compile Include="Configuration\MongoConfiguration.cs" />
+    <Compile Include="IMongoCollection_1.Async.cs" />
     <Compile Include="IMongoDatabase.cs" />
     <Compile Include="Linq\ExecutionBuilder.cs" />
     <Compile Include="Linq\Expressions\Alias.cs" />
@@ -139,6 +141,7 @@
     <Compile Include="Linq\Translators\ExpressionReplacer.cs" />
     <Compile Include="MapReduce.cs" />
     <Compile Include="Commands\MapReduceCommand.cs" />
+    <Compile Include="MongoCollection_1.Async.cs" />
     <Compile Include="MongoRegexOption.cs" />
     <Compile Include="Results\MapReduceResult.cs" />
     <Compile Include="Serialization\Builders\DictionaryBuilder.cs" />

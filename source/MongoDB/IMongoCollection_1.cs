@@ -11,7 +11,7 @@ namespace MongoDB
     ///   Safemode checks the database for any errors that may have occurred during 
     ///   the insert such as a duplicate key constraint violation.
     /// </remarks>
-    public interface IMongoCollection<T>
+    public partial interface IMongoCollection<T>
         where T : class
     {
         /// <summary>
